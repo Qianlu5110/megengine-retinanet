@@ -20,8 +20,8 @@ from megengine.data import DataLoader, Infinite, RandomSampler
 from megengine.data import transform as T
 from megengine.optimizer import SGD
 
-from tools.data_mapper import data_mapper
-from tools.utils import (
+from . import data_mapper
+from .utils import (
     AverageMeter,
     DetectionPadCollator,
     GroupedRandomSampler,
