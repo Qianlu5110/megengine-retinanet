@@ -30,8 +30,8 @@ from typing import List
 import megengine.functional as F
 import megengine.module as M
 
-import layers
-
+# import layers
+from detection import layers
 
 class FPN(M.Module):
     """

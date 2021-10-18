@@ -12,7 +12,8 @@ from typing import List
 import megengine.module as M
 from megengine import Tensor
 
-import layers
+# import layers
+from detection import layers
 
 
 class BoxHead(M.Module):
