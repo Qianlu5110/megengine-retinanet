@@ -16,14 +16,14 @@ class CustomRetinaNetConfig(models.RetinaNetConfig):
         # ------------------------ data cfg -------------------------- #
         self.train_dataset = dict(
             name="chongqigongmen",
-            root="images",
-            ann_file="train.json",
+            root="data_label/ai-iamge",
+            ann_file="data_label/train_arch.json",
             remove_images_without_annotations=True,
         )
         self.test_dataset = dict(
             name="chongqigongmen",
-            root="images",
-            ann_file="test.json",
+            root="data_label/ai-iamge",
+            ann_file="data_label/test_arch.json",
             remove_images_without_annotations=False,
         )
         self.num_classes = 1
